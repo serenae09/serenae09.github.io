@@ -1,0 +1,41 @@
+model-viewer {
+    --ar-button-display: none;
+    background-color: #51576e;
+    overflow-x: hidden;
+    --poster-color: #eee;
+    height: 50%;
+    width: auto;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 40px;
+}
+
+.btn-primary {
+    background-color: #003B73;
+    border-color: #003B73;
+    border-radius: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+#annotation {
+    background-color: #e6e6e6;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 3px;
+    padding: 3px;
+    font-size: small;
+    width: 230px;
+    height: 35px;
+
+}
+
+/* This keeps child nodes hidden while the element loads */
+:not(:defined)>* {
+    display: none;
+}
